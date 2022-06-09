@@ -1,0 +1,374 @@
+/* MOBILE FIRST */
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* INDEX */
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    background-color: #1EB3F3;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #1794ca;
+}
+
+.color-acento {
+    color: #1794ca;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.grid-container header {
+    grid-column: 1/-1
+}
+
+header {
+    background-color: whitesmoke;
+}
+
+header .logo {
+    margin: 0%;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #1EB3F3;
+    font-size: 1.5em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    cursor: pointer;
+    color: #1794ca;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/energiarenovable.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+.grid-container main {
+    grid-column: 1/-1
+}
+
+#somos {}
+
+#somos .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#servicios {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#servicios .container {
+    padding: 150px 12px;
+
+}
+
+#servicios h2 {
+    margin-top: 0;
+}
+
+#servicios p {
+    display: none;
+
+}
+
+#servicios .carta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/panel.jpg);
+
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/electronica.jpg);
+
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/gestion.jpg);
+
+}
+
+.carta:last-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/software.jpg);
+
+}
+
+.gridcontainer footer {
+    grid-column: 1/-1
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0%;
+    padding: 12px;
+    font-size: 2vh;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+}
+
+/* ----------------------------- */
+
+/* CONTACTO */
+
+
+#hero-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.5)), url(../images/redessociales.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero-contacto h1 {
+    color: white;
+}
+
+#redes-sociales {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#redes-sociales .container {
+    padding: 150px 15px;
+
+}
+
+#redes-sociales h2 {
+    margin: 30px;
+}
+
+#redes-sociales .carta-contacto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta-contacto:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/wpp.jpg);
+
+}
+
+.carta-contacto:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/facebook.jpg);
+
+}
+
+.carta-contacto:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/instagram.jpg);
+
+}
+
+.carta-contacto:last-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/email.jpg);
+
+}
+
+
+/* Y MODIFICAR CARTAS DE CONTACTO POR ICONOS DE REDES SOCIALES */
+
+/* ----------------------------- */
+
+
+/* MARCAS ASOCIADAS */
+
+/* PORTFOLIO */
+
+
+/* ----------------------------- */
+
+
+
+/* DESKTOP RESPONSIVE */
+
+@media (min-width: 720px) {
+
+    /* INDEX */
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    #somos .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos .texto {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 30px;
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+    }
+
+    #somos h2 {
+        margin-top: 0px;
+    }
+
+    #somos .image-container {
+        background-image: url(../images/somo2.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #servicios .servicios-dos {
+        display: flex;
+        justify-content: center;
+    }
+
+    #servicios p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #servicios h3 {
+        margin-top: 0px;
+    }
+
+    #servicios .carta {
+        padding: 50px;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+
+    /* CONTACTO */
+
+    #redes-sociales .redes {
+        display: flex;
+        justify-content: center;
+    }
+
+    #redes-sociales p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #redes-sociales h3 {
+        margin-top: 0px;
+    }
+
+    #redes-sociales .carta-contacto {
+        padding: 50px;
+    }
+
+    /* MARCAS ASOCIADAS */
+
+    /* PORTFOLIO */
+
+}
